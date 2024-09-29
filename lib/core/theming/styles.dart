@@ -14,4 +14,14 @@ class CustomTextStyle {
     fontWeight: FontWeight.bold,
     color: ColorsManager.mainblue,
   );
+    static TextStyle font13GrayRegular = TextStyle(
+    fontSize: 13.sp,
+    fontWeight: FontWeight.normal,
+    color: ColorsManager.gray,
+  );
+    static TextStyle font16WhiteSimiBold = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w500,
+    color: Colors.white,
+  );
 }

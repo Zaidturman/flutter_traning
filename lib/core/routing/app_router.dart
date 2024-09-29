@@ -5,6 +5,8 @@ import 'package:traning_project/features/onboarding/onboarding_screen.dart';
 
 class AppRouter {
   Route generateRoute(RouteSettings settings){
+    // this argument to be passed in any screen like this ( arguments as ClassName )
+    final argument = settings.arguments;
     switch(settings.name){
       case Routes.onBoardingScreen:
         return MaterialPageRoute(

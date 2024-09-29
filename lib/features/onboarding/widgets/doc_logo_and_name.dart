@@ -9,13 +9,18 @@ class DocLogoAndName extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          SvgPicture.asset('assets/svgs/docdoc_logo.svg'),
-          SizedBox(width: 10.w),
-          Text('DocDoc',
+      children: [
+        SizedBox(
+          width: 40, // عرض الصورة
+          height: 40, // ارتفاع الصورة
+          child: Image.asset('assets/images/docdoc_logo.png'),
+        ),
+        SizedBox(width: 10.w),
+        Text(
+          'DocCore',
           style: CustomTextStyle.font28Black700Weight,
-          )
-        ],
+        ),
+      ],
     );
-  }
+ }
 }
