@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:traning_project/features/onboarding/widgets/doc_logo_and_name.dart';
+import 'package:traning_project/features/onboarding/widgets/doctor_image_and_text.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -17,7 +18,9 @@ class OnboardingScreen extends StatelessWidget {
             ),
             child: Column(
               children: [
-                DocLogoAndName()
+                DocLogoAndName(),
+                SizedBox(height: 30.h),
+                const DoctorImageAndText(),
               ],
             ),
           ),
